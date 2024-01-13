@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "ec2_instance" {
-  ami                    = "ami-026b57f3c383c2eec"
+  ami                    = "ami-0c0b74d29acd0cd97"
   instance_type          = "t3a.medium"
   key_name               = var.ssh_key_name
   vpc_security_group_ids = [aws_security_group.sg.id]
